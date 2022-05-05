@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #F4F4F4;
+}
+
+/*------------------------------------------------------*/
+/*-------------------  |  HEADER  |  -------------------*/
+/*------------------------------------------------------*/
+header{
+    background-color: #2062AD;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    height: 3.5em;
+}
+
+.title{
+    color: #ffffff;
+    font-size: 1em;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.div-header{
+    display: flex;
+    align-items: center;
+}
+
+#div-logo{
+    width: 2.5em;
+}
+
+#logo-cimol{
+    width: 2.5em;
+}
+
+#div-title{
+    width: 100%
+
+}
+
+.title{
+    width: 100%;
+
+}
+/*------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+    header{
+        height: 9.4em;
+    }
+
+    #logo-cimol{
+        width: 7em;
+    }
+
+    #div-logo{
+        width:7em;
+    }
+
+    .title{
+        font-size: 2.8em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .title{
+        font-size: 2.7em;
+    }
+}
+
+@media only screen and (min-width: 1200px) { 
+    header{
+        height: 6em;
+    }
+
+    #logo-cimol{
+        width: 5em;
+    }
+
+    #div-logo{
+        width:5em;
+    }
+
+    .title{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 1800px) { 
+    header{
+        height: 9.4em;
+    }
+
+    #logo-cimol{
+        width: 7em;
+    }
+
+    #div-logo{
+        width:7em;
+    }
+
+    .title{
+        font-size: 2.8em;
+    }
+}

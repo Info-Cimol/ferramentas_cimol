@@ -24,17 +24,64 @@
                 <div class="list-disable" id="nav-itens">
                     <h3><B>NAVEGAÇÃO</B></h3>
                     <ul>
-                        <li><a href="#">Professores</a></li>
-                        <li><a href="#">Coordenação</a></li>
-                        <li><a href="#">Cursos</a></li>
-                        <li><a href="#">Alunos</a></li>
-                        <li><a href="#">Armarios</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a class="list-item" href="#">Professores</a></li>
+                        <li><a class="list-item" href="#">Coordenação</a></li>
+                        <li><a class="list-item" href="#">Cursos</a></li>
+                        <li><a class="list-item" href="#">Alunos</a></li>
+                        <li><a class="list-item" href="#">Armarios</a></li>
+                        <li><a class="list-item" href="#">Contato</a></li>
+                        <li><a class="list-item" href="#section-login">Login</a></li>
                     </ul>
                 </div>
             </nav>
-            <section id="login">
+
+            <section id="section-login" class="active">
+                <div id="div-text">
+                    <h2 class="h2-section">Conectar-se</h2>
+                    <p>Para realizar diversas ações em nossa plataforma você precisa estar conectado a uma conta, realize sua conexão abaixo.</p>
+                </div>
+
+                <form id="form">
+                    <div id="div-email">
+                        <label for="EMAIL" class="label"><b>EMAIL</b></label>
+                        <input class="input-login" type="text" id="input-email-login" placeholder="example@example.com"/>
+                    </div>
+
+                    <div id="div-senha">
+                        <label for="SENHA" id="senha" ><b>SENHA</b></label>
+                        <input class="input-login" type="text" id="input-password-login" placeholder="senha"/>
+                    </div>
+
+                    <div id="div-btns">
+                        <input type="submit" class="btn-submit" id="btn-conn-lg" value="CONECTAR-SE"/>
+                        <input type="submit" class="btn-submit" id="btn-create-lg" value="CADASTRAR-SE"/>
+                    </div>
+                </form>
+
+            </section>
+            
+            <section id="section-cadastro" class="disabled">
+                <div id="div-text">
+                    <h2 class="h2-section">Registrar-se</h2>
+                    <p>Para realizar diversas ações em nossa plataforma você precisa estar conectado a uma conta. Crie a sua abaixo ou entre se ja tiver uma.</p>
+                </div>
+
+                <form id="form">
+                    <div id="div-email">
+                        <label for="EMAIL" class="label"><b>EMAIL</b></label>
+                        <input class="input-login" type="text" id="input-email-login" placeholder="example@example.com"/>
+                    </div>
+
+                    <div id="div-senha">
+                        <label for="SENHA" id="senha" ><b>SENHA</b></label>
+                        <input class="input-login" type="text" id="input-password-login" placeholder="senha"/>
+                    </div>
+
+                    <div id="div-btns">
+                        <input type="submit" class="btn-submit" id="btn-create-cad" value="CADASTRAR-SE"/>
+                        <input type="submit" class="btn-submit" id="btn-login-cad" value="CONECTAR-SE"/>
+                    </div>
+                </form>
 
             </section>
         </main>

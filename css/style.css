@@ -53,13 +53,15 @@ header{
 }
 
 #list{
-    background-color: #CCCCCC;
+    background-color: #F4F4F4;
     width: 2.1em;
     border-radius: 0px 0px 5px 0px;
+    position: fixed;
 }
 
 #list-img{
     width: 2em;
+    position: fixed;
 }
 
 .list-disable{
@@ -67,7 +69,108 @@ header{
 }
 
 .list-active{
-    visibility: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#nav-itens h3{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 2%;
+}
+
+#nav-itens ul {
+    padding: 0px;
+}
+
+#nav-itens ul li{
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    padding: 1% 0% 1% 0%;
+}
+
+.list-item{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.7em;
+    width: 100%;
+}
+
+.h2-section{
+    width: auto;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#div-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+
+#div-text p{
+    font-size: 0.8em;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 0px;
+}
+
+#form{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form div label{
+    width: 100%;
+    padding: 0% 0% 2% 2%;
+    margin-top: 2%;
+    font-size: 0.9em;
+}
+
+#form div{
+    width: 85vw;
+}
+
+.input-login{
+    border: 1px solid #2062AD;
+    border-radius: 5px;
+    height: 6vh;
+    padding-left: 2%;
+    width: 85vw;
+}
+
+#div-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.btn-submit{
+    width: 70vw;
+    padding: 2% 0% 2% 0%;
+    border: none;
+    background-color: #2062AD;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 5%;
+}
+
+.disabled{
+    display: none;
+}
+
+.active{
+    display: block;
 }
 /*------------------------------------------------------*/
 

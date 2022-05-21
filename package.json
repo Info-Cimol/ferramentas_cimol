@@ -2,7 +2,7 @@
   "name": "ferramentas-cimol",
   "version": "1.0.0",
   "description": "",
-  "main": "javaScript/index.js",
+  "main": "javaScript/server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Info-Cimol/ferramentas_cimol#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
     "express": "^4.18.1",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.16"

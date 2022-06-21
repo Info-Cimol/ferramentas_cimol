@@ -1,0 +1,11 @@
+{
+    "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_USER": "root",
+        "MYSQL_PWD": "",
+        "MYSQL_PORT": 3306,
+        "MYSQL_DB": "cimol",
+
+        "JWT_KEY": "FerramentasCimol2022"
+    }
+}

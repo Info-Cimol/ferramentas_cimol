@@ -9,6 +9,7 @@
         <link href="./css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <!--HEADER-->
         <header>
             <div id="div-logo" class="div-header">
                 <img id="logo-cimol" src="./imagens/cimol-logo.png" alt="LOGO" />
@@ -19,6 +20,7 @@
         </header>
 
         <main>
+            <!--NAV BAR-->
             <nav id="list">
                 <img id="list-img" src="../imagens/list.svg" alt="" />
                 <div class="list-disable" id="nav-itens">
@@ -35,8 +37,9 @@
                 </div>
             </nav>
 
+            <!--PAGINA DE LOGIN-->
             <section id="section-login" class="active">
-                <div id="div-text">
+                <div class="div-text">
                     <h2 class="h2-section">Conectar-se</h2>
                     <p>Para realizar diversas ações em nossa plataforma você precisa estar conectado a uma conta, realize sua conexão abaixo.</p>
                 </div>
@@ -60,6 +63,7 @@
 
             </section>
             
+            <!--PAGINA DE CADASTRO-->
             <section id="section-cadastro" class="disabled">
                 <div id="div-text">
                     <h2 class="h2-section">Registrar-se</h2>
@@ -82,7 +86,38 @@
                         <input type="submit" class="btn-submit" id="btn-login-cad" value="CONECTAR-SE"/>
                     </div>
                 </form>
+            </section>
 
+            <!--PAGINA DE ADMINISTRADOR-->
+            <section id="section-adm-table" class="disabled">
+                <div class="div-text">
+                    <h2 class="h2-section">Tabela de Alunos</h2>
+                    <p>Abaixo há uma tabela onde está sendo exibido as informações de todos os alunos cadastrados. Caso não tenha um aluno adiciona no menu ao lado.</p>
+                </div>
+                <div id="div-adm-table-top">
+                    <div id="div-adm-filter">
+                        <select id="select-aluno" class="form-select form-select" aria-label=".form-select example">
+                            <option selected>Todos</option>
+                            <option value="1">Curso</option>
+                            <option value="2">Modalidade</option>
+                            <option value="3">Ano/Semestre</option>
+                        </select>
+                    </div>
+                    <div id="div-adm-import" class="">
+                        <input class="form-control form-control" type="file" id="input-adm-import-file" multiple>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="./imagens/three-dots-vertical.svg"/>
+                            </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
             </section>
         </main>
     </body>

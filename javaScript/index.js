@@ -22,9 +22,34 @@ list.addEventListener("click", function(e){
 })
 
 ////////////////  |  CLICK-LOGIN  |  //////////////
-let btn_createAccCad = document.getElementById("btn-create-cad");
+let btn_login = document.getElementById("btn-conn-lg");
 
-/*btn_createAccCad.addEventListener("click", function(e){
+btn_login.onclick = async (e) => {
+    let email = document.getElementById("input-email-login").value;
+    let password = document.getElementById("input-password-login").value;
+
+    let myInit = {
+        method: "POST",
+        mode: "cors",
+        cache: "default",
+        body: new URLSearchParams({
+            'email': email,
+            'password': password
+        }),
+        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+    }
+
+    fetch("http://127.0.0.1:3000/api/login", myInit).then(
+        async (response) => {
+            const data = await response.json();
+            console.log(data)
+        }
+    )
+
+    e.preventDefault();
+}
+/*let btn_createAccCad = document.getElementById("btn-create-cad");
+btn_createAccCad.addEventListener("click", function(e){
     let email = document.getElementById("input-email-login");
     let password = document.getElementById("input-password-login");
 
@@ -41,27 +66,22 @@ let btn_createAccCad = document.getElementById("btn-create-cad");
     e.preventDefault();
 })
 */
-let btn_login = document.getElementById("btn-conn-lg");
 
-btn_login.onclick = (e) => {
-    let email = document.getElementById("input-email-login");
-    let password = document.getElementById("input-password-login");
-
-    let myInit = {
-        method: "POST",
-        mode: "cors",
-        cache: "default",
-        body: {
-            "email": email,
-            "password": password
-        }
-    }
-
-    fetch("http://127.0.0.1:3000/login", myInit).then((response) => {
-        let token = response;
-        console.log(token);
-    })
-
-
-    e.preventDefault();
+/*
+let myInit2 = {
+    method: "POST",
+    mode: "cors",
+    cache: "default",
+    body: new URLSearchParams({
+        'token': data.token
+    }),
+    headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
 }
+
+fetch("http://127.0.0.1:3000/api/login/verify", myInit2).then(
+    async (response) => {
+        const data2 = await response.json();
+        console.log(data2)
+    }
+)
+*/
